@@ -71,20 +71,12 @@ class TableViewController: UITableViewController  // Mounica
         
     }
     
-//    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-//        if editingStyle == .Delete {
-//            stores.removeAtIndex(indexPath.row)
-//            
-//            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-//        } else if editingStyle == .Insert {
-//            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-//        }
-//    }
+
     
    // https://github.com/guru-teja/Project-X
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        switch editingStyle {
+        switch editingStyle {         // Teja
         case .Delete:
             // remove the deleted item from the model
             let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
