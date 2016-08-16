@@ -21,7 +21,7 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate,UINavig
     
     let imagePicker = UIImagePickerController()
     var isUpdate:Bool?
-    var switchvalue:Bool = true
+    var switchvalue:Bool = true 
     
     
     @IBOutlet weak var datePicker: UIDatePicker!  // Teja
@@ -93,7 +93,7 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate,UINavig
         
     }
     
-    @IBAction func additem(sender: UIBarButtonItem)
+    @IBAction func additem(sender: UIBarButtonItem)   // Teja
     {
         
         var localNotification = UILocalNotification()
@@ -109,7 +109,7 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate,UINavig
         
         
         
-        if switchvalue == true
+        if switchvalue == true    // Teja
         {
             //localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
             localNotification.fireDate = datePicker.date
